@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/camtest_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Camera Function Test"
+        android:textSize="24dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/camtest_description"
+        android:paddingTop="10dp"
+        android:paddingHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Camera function and gain permission test for capture image"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/camtest_btn_capture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Capture" />
+
+        <ImageView
+            android:id="@+id/camtest_imageview_capture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="Captured Bitmap Image Goes Here"
+            android:src="@drawable/test_camcapture_template"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
